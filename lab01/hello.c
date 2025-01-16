@@ -5,6 +5,7 @@
 int main() {
 
     printf("hello, world\n");
+    printf("this is a second line\n");
 
     return 0;
 }
