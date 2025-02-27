@@ -1,4 +1,4 @@
-FILE = debugMe_2024
+FILE = debugMe_2025
 
 build: $(FILE).c
 	gcc -Wall -g $(FILE).c -o $(FILE) -lm -fno-pie -no-pie
