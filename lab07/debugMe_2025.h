@@ -9,7 +9,7 @@ Returns the array with each element incremented by 1
 Does not change the original array
 */
 int* addOne(int * arr, int size){
-    int resultArray[10];
+    int *resultArray = malloc(sizeof(arr[0] * size));
     for(int i = 0; i < size; i++){
         *(resultArray + i) = *(arr + i) + 1;
     }
