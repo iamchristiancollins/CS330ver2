@@ -1,12 +1,13 @@
-CC = gcc
-CFLAGS = -Wall -Wextra -std=c99
-TARGET = asgn4
-SRCS = asgn4.c
+FILE = asgn4
 
-all: $(TARGET)
+build: $(FILE).c
+	gcc -Wall -g $(FILE).c -o $(FILE) -lm -fno-pie -no-pie
 
-$(TARGET): $(SRCS)
-	$(CC) $(CFLAGS) -o $(TARGET) $(SRCS)
 
-clean:
-	rm -f $(TARGET)
+.PHONY: db
+
+db:
+	gdb -tui $(FILE)
+
+run:
+	./$(FILE)

@@ -106,4 +106,4 @@ int convertHexToDec(int *hexArray)
     return dec;
 }
 
-#endif // ASGN4_H
+#endif
