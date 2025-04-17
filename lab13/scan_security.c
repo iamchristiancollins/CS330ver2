@@ -21,12 +21,12 @@ int main(){
 
 
     // print the stack
-    /*
+
     int i;
     for(i=20; i>=0; i--){
         printf("%p: %c\n", (psswd + i), *(psswd +i));
     }
-    */
+
 
 
 
@@ -46,6 +46,8 @@ gcc scan_security.c -o hacks
 
 then run as:
 ./hacks < <(python -c "print('1234')")
+OR
+python -c "print('AAAAAAAAA' + '\x00' + 'AAAAAAAAA' + '\x00')" | ./hacks
 
 
 
