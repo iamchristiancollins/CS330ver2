@@ -1,4 +1,4 @@
-FILE = file_name
+FILE = primes_start
 
 build: $(FILE).c
 	gcc -Wall -g $(FILE).c -o $(FILE) -lm -fno-pie -no-pie
